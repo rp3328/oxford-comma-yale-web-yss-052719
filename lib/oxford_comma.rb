@@ -11,6 +11,6 @@ def oxford_comma(array)
   elseif len == 2
     return "#{array[0]}#{two}#{array[1]}"
   else
-    return"#{array[0...1].join(", ")}#{last}#{array[-1]}"
+    return"#{array[0...-1].join(", ")}#{last}#{array[-1]}"
   end
 end
