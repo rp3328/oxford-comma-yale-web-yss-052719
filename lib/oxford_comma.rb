@@ -1,5 +1,5 @@
 def oxford_comma(array)
-  len = array.size
+  len = array.length
   com = ", "
   two = " and "
   last = ", and "
@@ -9,7 +9,7 @@ def oxford_comma(array)
   elseif len == 1
     return "#{array[0]}"
   elseif len == 2
-    return "#{array[0]}#{two}#{array[1]}"
+    return array.join(two)
   else
     return"#{array[0...-1].join(", ")}#{last}#{array[-1]}"
   end
